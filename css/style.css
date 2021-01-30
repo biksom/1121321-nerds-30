@@ -1,0 +1,307 @@
+/*Variables*/
+
+:root {
+  --basic-black: #000000;
+  --basic-light-black: #283136;
+
+  --basic-dark: #231f20;
+  --basic-light-dark: #666666;
+
+  --basic-extra-gray: #444444;
+  --basic-dark-gray: #4d4d4d;
+  --basic-mildly-gray: #a6a6a6;
+  --basic-gray: #eeeeee;
+  --basic-light-gray: #e1e1e1;
+
+  --basic-extra-red: #d7373b;
+  --basic-mildly-red: #e74246;
+  --basic-red: #fb565a;
+
+  --basic-extra-green: #00aa62;
+  --basic-mildly-green: #00bc6c;
+  --basic-green: #00ca74;
+
+  --basic-extra-yellow: #e5a722;
+  --basic-mildly-yellow: #eab534;
+  --basic-yellow: #efc849;
+
+  --basic-white: #ffffff;
+}
+
+/*Global*/
+
+.body-page {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Main navigation*/
+
+.main-navigation,
+.basket {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-header,
+.description {
+  background-color: var(--basic-gray);
+}
+
+.site-navigation a,
+.basket {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.basket:hover {
+  color: var(--basic-red);
+}
+
+.site-navigation a:active,
+.basket:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+
+}
+
+/*Slaiders*/
+
+.description-item-paragraph {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.description-item-competence {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+}
+
+.description-study {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.description-study:hover {
+  background-color: var(--basic-mildly-red);
+
+}
+
+.description-study:active {
+  background-color: var(--basic-extra-red);
+}
+
+.description-study a:active {
+  opacity: 0.3;
+}
+
+
+
+
+/*Services*/
+
+.web,
+.app,
+.presentation {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.services-list-item {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+}
+
+.services-order-web,
+.services-order-app,
+.services-order-presentation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.services-order-web {
+  background-color: var(--basic-red);
+}
+
+.services-order-web:hover {
+  background-color: var(--basic-mildly-red);
+}
+
+.services-order-web:active {
+  background-color: var(--basic-extra-red);
+}
+
+.services-order-app {
+  background-color: var(--basic-green);
+}
+
+.services-order-app:hover {
+  background-color: var(--basic-mildly-green);
+}
+
+.services-order-app:active {
+  background-color: var(--basic-extra-green);
+}
+
+.services-order-presentation {
+  background-color: var(--basic-yellow);
+}
+
+.services-order-presentation:hover {
+  background-color: var(--basic-mildly-yellow);
+}
+
+.services-order-presentation:active {
+  background-color: var(--basic-extra-yellow);
+}
+
+/*About-us*/
+
+.about-us-characteristic {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.about-us-slogan {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+}
+
+.about-us-contractor {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-light-black);
+}
+
+.about-us-item {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+}
+
+.about-us-formality {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.percent {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.ratio {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-light-black);
+}
+
+/* Contacts*/
+
+.find-us-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.address,
+.contacts-phone {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-light-dark);
+}
+
+.write-us {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.friendship {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.discount {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-extra-gray);
+}
+
+
+/*  Popup*/
+
+.popup-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-black);
+}
+
+.popup-name,
+.popup-mail,
+.popup-lead {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.popup-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
