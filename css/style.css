@@ -418,6 +418,15 @@ img {
   color: var(--basic-light-dark);
 }
 
+.shopping-menu-sedona,
+.shopping-menu-pink,
+.shopping-menu-barbershop,
+.shopping-menu-mishka,
+.shopping-menu-aplus,
+.shopping-menu-kvast {
+  background-color: var(--basic-gray);
+}
+
 .cards-cost {
   font-weight: 500;
   font-size: 16px;
