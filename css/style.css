@@ -7,6 +7,7 @@
   --basic-dark: #231f20;
   --basic-light-dark: #666666;
 
+  --basic-super-gray: #888888;
   --basic-extra-gray: #444444;
   --basic-dark-gray: #4d4d4d;
   --basic-mildly-gray: #a6a6a6;
@@ -73,9 +74,16 @@ img {
 /*Main navigation*/
 
 .site-navigation {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
-  margin: 0;
+  width: 437px;
+  margin: 0 auto;
   padding: 0;
+}
+
+.site-navigation-list {
+  padding-right: 45px;
 }
 
 .main-navigation,
@@ -88,11 +96,23 @@ img {
   background-color: transparent;
 }
 
+.basket {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.basket-img {
+  padding-right: 24.48px;
+}
+
 .main-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr min-content;
+  grid-template-columns: 1fr 3fr min-content;
+  align-items: center;
   width: 1160px;
   margin: 0 auto;
+  margin-top: 48.98px;
   padding: 0 140px;
 }
 
@@ -149,12 +169,15 @@ img {
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-black);
+  margin-bottom: 0;
 }
 
 .description-item-competence {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-light-black);
+  margin-top: 25px;
+  margin-bottom: 43px;
 }
 
 .description-study {
@@ -218,6 +241,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-light-black);
+  margin-bottom: 36px;
 }
 
 .services-order-web,
@@ -273,13 +297,12 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 153px;
-  margin-bottom: 127px;
+  margin-bottom: 121px;
 }
 
 
 .about-us-container {
   margin: 0 auto;
-
 }
 
 .about-us-characteristic {
@@ -287,12 +310,15 @@ img {
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-black);
+  margin: 0 auto;
+  margin-top: 34px;
 }
 
 .about-us-slogan {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-light-black);
+  margin-top: 32px;
 }
 
 .about-us-contractor {
@@ -301,18 +327,21 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-light-black);
+  margin-top: 40px;
 }
 
 .about-us-list {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .about-us-item {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-light-black);
+  margin-top: 30px;
 }
 
 .about-us-formality {
@@ -321,6 +350,7 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-top: 37px;
 }
 
 .percent {
@@ -330,10 +360,20 @@ img {
   color: var(--basic-black);
 }
 
+.percent-146,
+.percent-100,
+.percent-150 {
+  padding-top: 31px;
+}
+
 .ratio {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-black);
+}
+
+.ratio-td {
+  padding-top: 30px;
 }
 
 /*Partners*/
@@ -342,7 +382,7 @@ img {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /*opacity: 0.2;*/
+  margin-bottom: 136px;
 }
 
 .partners-academy,
@@ -387,6 +427,15 @@ img {
 
 /* Main footer*/
 
+.main-footer-bar {
+  background-color: var(--basic-super-gray);
+}
+
+/*.main-footer {
+  margin-bottom: 65px;
+}
+*/
+
 .find-us-subtitle {
   font-weight: bold;
   font-size: 18px;
@@ -401,6 +450,11 @@ img {
   line-height: 18px;
   color: var(--basic-light-dark);
 }
+
+.contacts-phone {
+  margin-bottom: 47px;
+}
+
 
 .write-us {
   font-weight: 500;
@@ -431,17 +485,67 @@ img {
 .footer-social {
   display: grid;
   grid-template-columns: 1fr 2fr;
-
+  align-items: center;
+  margin-top: 65px;
 }
 
 .social-list {
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
-.social-button {
+
+.social-button-vk {
+  padding: 32px 27px 31px 25.5px;
+  border-radius: 50%;
+  background-color: var(--basic-light-gray);
+  margin-right: 11px;
+}
+
+.social-button-fc {
+  padding: 31px 34px 28px 35px;
+  border-radius: 50%;
+  background-color: var(--basic-light-gray);
+  margin-right: 11px;
+}
+
+.social-button-inst {
+  padding: 30px;
+  border-radius: 50%;
   background-color: var(--basic-light-gray);
 }
 
+.social-button-vk:hover {
+  background-color: var(--basic-mildly-red);
+
+}
+
+.social-button-fc:hover {
+  background-color: var(--basic-mildly-red);
+
+}
+
+.social-button-inst:hover {
+  background-color: var(--basic-mildly-red);
+
+}
+
+.social-button-vk:active {
+  background-color: var(--basic-extra-red);
+  opacity: 0.3;
+}
+
+.social-button-fc:active {
+  background-color: var(--basic-extra-red);
+  opacity: 0.3;
+}
+
+.social-button-inst:active {
+  background-color: var(--basic-extra-red);
+  opacity: 0.3;
+}
 
 /*  Popup*/
 
