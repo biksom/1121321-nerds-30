@@ -753,13 +753,13 @@ img {
 .pagination-list {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-container {
   display: flex;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
+  align-items: baseline;
   margin-bottom: 60px;
 }
 
