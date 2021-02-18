@@ -16,18 +16,23 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <a class="basket" href="blank.html"><img class="basket-img" src="img/icon-basket.svg" width="15" height="15" alt="Корзина"> Корзина</a>
-    </nav>
+    <div class="main-header-bar">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-list"><a href="blank.html">Студия</a></li>
+          <li class="site-navigation-list"><a href="blank.html">Клиенты</a></li>
+          <li class="site-navigation-list"><a class="shop" href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-list"><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="navigation-basket">
+          <a class="basket" href="blank.html">
+            <!-- <img class="basket-img" src="img/icon-basket.svg" width="15" height="15" alt="Корзина">  -->Корзина</a>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="main-header-bar-title">
@@ -145,8 +150,10 @@
             <li class="pagination-item">
               <a href="#">3</a>
             </li>
+            <li class="pagination-item-next">
+              <a href="#">Следующая</a>
+            </li>
           </ul>
-          <button class="pagination-button" type="button">Следующая</button>
         </div>
       </section>
     </div>
