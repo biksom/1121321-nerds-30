@@ -130,18 +130,21 @@ img {
   grid-template-columns: 362px 678px 115px;
   justify-content: center;
   align-items: center;
-  /*width: 1160px;
-*/
-  /* margin: 0 auto;
-*/
   margin-top: 48.98px;
-  /* padding: 0 140px;*/
-
-
 }
 
-.shop {
-  text-decoration: underline var(--basic-red);
+.site-navigation .shop {
+  position: relative;
+}
+
+.shop::after {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 2px;
+  background-color: var(--basic-red);
+  right: 1px;
+  top: 37px;
 }
 
 .main-header,
@@ -308,9 +311,6 @@ img {
 
 .services {
   margin-bottom: 121px;
-  background-image: url(../img/line.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
 }
 
 .services-list {
@@ -320,7 +320,17 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
+
+.services::after {
+  content: "";
+  position: absolute;
+  width: 1158px;
+  height: 2px;
+  background-color: var(--basic-gray);
+}
+
 
 .services-item-img {
   padding: 0;
@@ -660,7 +670,7 @@ img {
 
 }
 
-.social-button-fb {
+.social-button-fb::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -671,7 +681,7 @@ img {
 
 }
 
-.social-button-inst {
+.social-button-inst::before {
   content: "";
   position: absolute;
   width: 21px;
@@ -697,26 +707,37 @@ img {
 
 }
 
-.social-button-vk::before:active {
-  opacity: 0.3;
-}
 
 .social-button-vk:active {
   background-color: var(--basic-extra-red);
-  /* opacity: 0.3;
-*/
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.social-button-vk:active::before {
+  background-color: var(--basic-extra-red);
+  opacity: 0.3;
+}
 
 .social-button-fb:active {
+  background-color: var(--basic-extra-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-button-fb:active::before {
   background-color: var(--basic-extra-red);
   opacity: 0.3;
 }
 
 .social-button-inst:active {
   background-color: var(--basic-extra-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-button-inst:active::before {
+  background-color: var(--basic-extra-red);
   opacity: 0.3;
 }
+
 
 /*  Popup*/
 
@@ -782,10 +803,6 @@ img {
   border: none;
 }
 
-/*.filter fieldset:first-child {
-  margin-bottom: 43px;
-}
-*/
 
 .filter legend {
   margin-bottom: 31px;
@@ -864,6 +881,11 @@ img {
   margin-right: 43px;
   margin-bottom: 71px;
 }
+
+.cards-item img {
+  display: block;
+}
+
 
 .cards-item:nth-child(2n) {
   margin-right: 0;
@@ -963,6 +985,8 @@ img {
 
 .pagination-item a:focus {
   background-color: var(--special-gray);
+  border-color: var(--special-gray);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item-current a {
