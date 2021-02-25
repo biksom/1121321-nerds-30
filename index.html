@@ -66,9 +66,9 @@
           </li>
         </ul>
         <ul class="slider-controls">
-          <li><button type="button" value="slide-1"></button></li>
-          <li><button type="button" value="slide-2"></button></li>
-          <li><button type="button" value="slide-3"></button></li>
+          <li><button class="current" type="button" value="slide-1" aria-label="Первый слайд"></button></li>
+          <li><button type="button" value="slide-2" aria-label="Второй слайд"></button></li>
+          <li><button type="button" value="slide-3" aria-label="Третий слайд"></button></li>
         </ul>
       </section>
     </div>
@@ -183,14 +183,20 @@
   <section class="popup">
     <h2 class="popup-title">Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post" id="form_message">
-      <p class="popup-name">Ваше имя:</p>
-      <input class="popup-input" type="text" name="name" placeholder="Имя Фамилия">
-      <p class="popup-mail">Ваш email:</p>
-      <input class="popup-input" type="text" name="email" placeholder="email@example.com">
+      <div class="popup-data">
+        <div>
+          <p class="popup-name">Ваше имя:</p>
+          <input class="popup-input" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <p class="popup-mail">Ваш email:</p>
+          <input class="popup-input" type="text" name="email" placeholder="email@example.com">
+        </div>
+      </div>
       <p class="popup-lead">Текст письма:</p>
-      <input class="popup-input" type="text" name="message" placeholder="В свободной форме">
+      <input class="popup-input-letter" type="text" name="message" placeholder="В свободной форме">
       <button class="popup-button" type="submit">Отправить</button>
-      <button class="popup-close" type="button">Закрыть</button>
+      <button class="popup-close" type="button" aria-label="Закрыть"></button>
     </form>
   </section>
 </body>
