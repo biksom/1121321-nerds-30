@@ -28,8 +28,7 @@
           <li class="site-navigation-list"><a href="blank.html">Контакты</a></li>
         </ul>
         <div class="navigation-basket">
-          <a class="basket" href="blank.html">
-            <!-- <img class="basket-img" src="img/icon-basket.svg" width="15" height="15" alt="Корзина">  -->Корзина</a>
+          <a class="basket" href="blank.html">Корзина</a>
         </div>
       </nav>
     </div>
@@ -54,17 +53,17 @@
               </div>
               <div class="price-controls">
                 <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
+                  от <input type="text" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
+                  до <input type="text" name="max-price" value="15000">
                 </label>
               </div>
             </div>
           </fieldset>
           <fieldset>
             <legend class="mesh">Сетка:</legend>
-            <ul class="filter-option mesh-list">
+            <ul class="mesh-list">
               <li class="filter-option mesh-item">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="mesh" value="adaptive" id="filter-adaptive" checked>
                 <label class="filter-radio" for="filter-adaptive">Адаптивная</label>
@@ -109,13 +108,36 @@
       </section>
       <section class="cards">
         <h2 class="visually-hidden">Карточки товаров</h2>
+        <div class="sort">
+          <p class="sort-paragraph">Сортировать:</p>
+          <ul class="sort-list">
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По названию</li>
+            <div class="sort-list-button">
+              <li>
+                <a href="#">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="button-down" d="M5.5 10L0 0H11" fill="#231F20" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="button-up" d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20" />
+                  </svg>
+                </a></li>
+            </div>
+          </ul>
+        </div>
         <ul class="cards-list">
           <li class="cards-item">
             <img src="img/sedona.jpg" width="358" height="578" alt="карточка сайта «Sedona»">
             <div class="shopping-menu">
               <h3><a class="shopping-menu-subtitle" href="blank.html">Sedona</a></h3>
               <p class="shopping-menu-description">Информационный сайт<br>для туристов</p>
-              <p class="cards-cost">9 900 р</p>
+              <a class="cards-cost" href="#">9 900 р</a>
             </div>
           </li>
           <li class="cards-item">
@@ -123,7 +145,7 @@
             <div class="shopping-menu">
               <h3><a class="shopping-menu-subtitle" href="blank.html">Pink</a></h3>
               <p class="shopping-menu-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
-              <p class="cards-cost">9 900 р</p>
+              <a class="cards-cost" href="#">9 900 р</a>
             </div>
           </li>
           <li class="cards-item">
@@ -131,7 +153,7 @@
             <div class="shopping-menu">
               <h3><a class="shopping-menu-subtitle" href="blank.html">Barbershop</a></h3>
               <p class="shopping-menu-description">Сайт салона красоты.<br>Для мужчин, да.</p>
-              <p class="cards-cost">9 900 р</p>
+              <a class="cards-cost" href="#">9 900 р</a>
             </div>
           </li>
           <li class="cards-item">
@@ -139,7 +161,7 @@
             <div class="shopping-menu">
               <h3><a class="shopping-menu-subtitle" href="blank.html">Mishka</a></h3>
               <p class="shopping-menu-description">Интернет-магазин<br>вязаных игрушек</p>
-              <p class="cards-cost">9 900 р</p>
+              <a class="cards-cost" href="#">9 900 р</a>
             </div>
           </li>
           <li class="cards-item">
@@ -147,7 +169,7 @@
             <div class="shopping-menu">
               <h3><a class="shopping-menu-subtitle" href="blank.html">Aplus</a></h3>
               <p class="shopping-menu-description">Лендинг курсов повышения<br>квалификации</p>
-              <p class="cards-cost">9 900 р</p>
+              <a class="cards-cost" href="#">9 900 р</a>
             </div>
           </li>
           <li class="cards-item">
@@ -155,7 +177,7 @@
             <div class="shopping-menu">
               <h3><a class="shopping-menu-subtitle" href="blank.html">Кваст</a></h3>
               <p class="shopping-menu-description">Промо-сайт производителя<br>крафтового кваса</p>
-              <p class="cards-cost">9 900 р</p>
+              <a class="cards-cost" href="#">9 900 р</a>
             </div>
           </li>
         </ul>
