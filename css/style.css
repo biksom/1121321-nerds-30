@@ -551,9 +551,9 @@ img {
   padding: 0;
   margin: 0;
   display: grid;
-  justify-content: space-around;
-  grid-template-columns: 302px 302px 302px 302px;
-  text-align: center;
+  grid-template-columns: 260px 260px 260px;
+  grid-gap: 40px;
+  align-items: center;
   position: relative;
   border-top: 2px solid var(--basic-gray);
   border-bottom: 2px solid var(--basic-gray);
@@ -799,7 +799,6 @@ img {
 .popup {
   display: none;
 
-
   position: fixed;
   left: 50%;
   width: 960px;
@@ -815,9 +814,6 @@ img {
   font-size: 45px;
   line-height: 53px;
   color: var(--basic-black);
-  /*margin-bottom: 98px;*/
-  bottom: 50px;
-
 }
 
 .popup-name,
