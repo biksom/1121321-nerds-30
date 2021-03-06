@@ -71,7 +71,16 @@ img {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Grid*/
@@ -436,7 +445,7 @@ img {
 .about-us {
   display: grid;
   grid-template-columns: 650px 390px;
-  column-gap: 153px;
+  column-gap: 147px;
   margin-bottom: 72px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -506,7 +515,9 @@ img {
 }
 
 .about-us-logo {
+  padding-top: 2px;
   margin-bottom: 34px;
+  padding-left: 3px;
 }
 
 .about-us-formality {
@@ -517,6 +528,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   margin-bottom: 27px;
+  padding-left: 10px;
 }
 
 .percent {
@@ -526,23 +538,47 @@ img {
   color: var(--basic-black);
 }
 
+.percent-146 {
+  padding-right: 8px;
+}
+
+.percent-50 {
+  margin-left: 8px;
+}
 
 .percent sup {
-  top: -11px;
-  right: 4px
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.per-cent146 {
+  padding-left: 1px;
+}
+
+.per-cent50 {
+  padding-left: 6px;
 }
 
 .ratio {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-black);
+
 }
 
-.ratio-td {
-  padding-top: 7px;
+.ratio-146 {
+  padding-top: 9px;
+  padding-right: 5px;
 }
 
+.ratio-100 {
+  padding-top: 10px;
+}
 
+.ratio-50 {
+  padding-top: 10px;
+}
 
 /*Partners*/
 
@@ -647,7 +683,10 @@ img {
 }
 
 .find-us {
-  padding-left: 50px;
+  padding: 49px 39px 47px 50px;
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-white);
 }
 
 .find-us-subtitle {
@@ -679,6 +718,10 @@ img {
   background-color: var(--basic-red);
   padding: 17px 44px 15px 44px;
   border-radius: 3px;
+}
+
+.friendship-wrapper {
+  padding-left: 11px;
 }
 
 .friendship {
@@ -1224,11 +1267,6 @@ img {
   margin-top: 0;
 }
 
-/*.sort-list-wrapper {
-  display: flex;
-  justify-content: space-between;
-}*/
-
 .sort-list {
   display: flex;
   justify-content: space-between;
@@ -1281,7 +1319,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
 }
 
@@ -1416,15 +1454,19 @@ img {
 }
 
 .pagination-item {
-  margin-right: 4px;
+  margin-right: 11px;
 }
 
 .pagination-item a {
   display: block;
   padding: 0;
   margin: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 17px 20px 15px 20px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1456,7 +1498,9 @@ img {
 .pagination-item-next {
   display: block;
   background-color: var(--basic-gray);
-  padding: 17px 77px 15px 78px;
+  width: 260px;
+  height: 50px;
+  padding: 17px 77px 15px 79px;
   border-radius: 3px;
   border: none;
   font-weight: 500;
@@ -1465,6 +1509,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .pagination-item-next a {
