@@ -53,13 +53,11 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Verdana", sans-serif;
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
-
 
 a {
   text-decoration: none;
@@ -235,14 +233,24 @@ img {
   margin: 0;
 }
 
+.description-item-competence-active {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 38px;
+}
+
 .description-item-competence {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-light-black);
   padding: 0;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 38px;
+  margin-bottom: 27px;
 }
 
 .description-study {
@@ -286,22 +294,22 @@ img {
 .description-item-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 105px;
+  padding-bottom: 80px;
   background-image: url(../img/slide-pic-2.png);
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: -27px;
+  background-position-x: 397px;
+  background-position-y: -11px;
   display: none;
 }
 
 .description-item-three {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 105px;
+  padding-bottom: 80px;
   background-image: url(../img/slide-pic-3.png);
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: -27px;
+  background-position-x: 397px;
+  background-position-y: -11px;
   display: none;
 }
 
@@ -326,6 +334,7 @@ img {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .slider-controls .current {
@@ -444,9 +453,9 @@ img {
 
 .about-us {
   display: grid;
-  grid-template-columns: 650px 390px;
-  column-gap: 147px;
-  margin-bottom: 72px;
+  justify-content: space-between;
+  grid-template-columns: 650px 360px;
+  margin-bottom: 74px;
   background-repeat: no-repeat;
   background-position: center bottom;
   position: relative;
@@ -455,7 +464,6 @@ img {
 
 .about-us-container {
   margin: 0 auto;
-  padding-right: 30px;
 }
 
 .about-us-characteristic {
@@ -515,20 +523,22 @@ img {
 }
 
 .about-us-logo {
-  padding-top: 2px;
-  margin-bottom: 34px;
-  padding-left: 3px;
+  margin-bottom: 33px;
+}
+
+.about-us-exactitude {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .about-us-formality {
-  width: 358px;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-bottom: 27px;
-  padding-left: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .percent {
@@ -538,13 +548,11 @@ img {
   color: var(--basic-black);
 }
 
-.percent-146 {
-  padding-right: 8px;
+.percent td {
+  padding: 0;
+  width: 33.33%;
 }
 
-.percent-50 {
-  margin-left: 8px;
-}
 
 .percent sup {
   font-weight: bold;
@@ -552,32 +560,16 @@ img {
   line-height: 40px;
 }
 
-.per-cent146 {
-  padding-left: 1px;
-}
-
-.per-cent50 {
-  padding-left: 6px;
-}
 
 .ratio {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-black);
-
 }
 
-.ratio-146 {
-  padding-top: 9px;
-  padding-right: 5px;
-}
-
-.ratio-100 {
-  padding-top: 10px;
-}
-
-.ratio-50 {
-  padding-top: 10px;
+.ratio-para {
+  padding: 0;
+  padding-top: 13px;
 }
 
 /*Partners*/
@@ -678,14 +670,18 @@ img {
 }
 
 .footer-map {
+  position: relative;
   display: block;
   margin: auto;
+  margin-bottom: 36px;
 }
 
 .find-us {
-  padding: 49px 39px 47px 50px;
+  position: absolute;
+  padding: 31px 39px 47px 50px;
   width: 319px;
   height: 308px;
+  margin-top: -401px;
   background-color: var(--basic-white);
 }
 
@@ -695,6 +691,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-bottom: 23px;
 }
 
 .address,
@@ -704,8 +701,12 @@ img {
   color: var(--basic-light-dark);
 }
 
+.address {
+  margin-bottom: 18px;
+}
+
 .contacts-phone {
-  margin-bottom: 47px;
+  margin-bottom: 54px;
 }
 
 
@@ -721,7 +722,7 @@ img {
 }
 
 .friendship-wrapper {
-  padding-left: 11px;
+  padding-left: 13px;
 }
 
 .friendship {
@@ -735,6 +736,8 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-extra-gray);
+  margin-top: -26px;
+  margin-bottom: 36px;
 }
 
 /*Social-networks*/
@@ -743,7 +746,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  margin-top: 65px;
 }
 
 .social-list {
@@ -851,7 +853,6 @@ img {
 
 .popup {
   display: none;
-
   position: fixed;
   left: 50%;
   width: 960px;
@@ -860,13 +861,22 @@ img {
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
+
+.modal-show {
+  display: block;
+}
+
+
 
 .popup-title {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
   color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 37px;
 }
 
 .popup-name,
@@ -878,7 +888,6 @@ img {
   color: var(--basic-black);
 }
 
-
 .popup-button {
   font-family: inherit;
   font-weight: 500;
@@ -887,9 +896,10 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding: 17px 83px 15px 83px;
+  padding: 17px 83px 15px 85px;
   border-radius: 3px;
   border: none;
+  cursor: pointer;
 }
 
 .popup-input {
@@ -900,7 +910,7 @@ img {
   border-radius: 3px;
   cursor: pointer;
   padding-left: 14px;
-  margin-top: 17px;
+  margin-top: 9px;
 }
 
 .popup-name {
@@ -929,25 +939,30 @@ img {
   height: 118px;
   border: 2px solid var(--special-ultra-gray);
   border-radius: 3px;
-  margin-bottom: 47px;
+  margin-bottom: 42px;
   resize: none;
   cursor: pointer;
   padding-left: 15px;
   padding-top: 13px;
+  margin-top: 10px;
 }
 
 .popup-data {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 99px;
+  margin-bottom: 34px;
+}
+
+.popup form {
+  position: relative;
 }
 
 .popup-close {
   position: absolute;
   padding: 0;
   margin: 0;
-  right: 90px;
-  top: 66px;
+  right: 0px;
+  top: 15px;
   width: 21px;
   height: 21px;
   background-image: url(../img/close-popup.svg);
@@ -1080,6 +1095,7 @@ img {
   font-family: inherit;
   font-size: inherit;
   outline: none;
+
 }
 
 .filters {
@@ -1096,8 +1112,6 @@ img {
 .mesh {
   margin-bottom: 15px;
 }
-
-
 
 .mesh-list {
   margin: 0;
@@ -1170,14 +1184,10 @@ img {
   opacity: 0.4;
 }
 
-
-
 .filter-input-checkbox+label:hover::before,
 .filter-input-checkbox:checked+label:hover::after {
   opacity: 1;
 }
-
-
 
 .filter legend {
   font-size: 18px;
@@ -1210,8 +1220,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
 }
-
-
 
 .filter-radio,
 .filter-checkbox {
@@ -1276,17 +1284,29 @@ img {
   list-style: none;
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-black);
   box-sizing: content-box;
   padding-top: 6px;
 }
 
+.sort-item {
+  color: var(--basic-black);
+  opacity: 0.2;
+  padding-right: 5px;
+}
+
+.sort-item:hover {
+  color: var(--basic-mildly-gray);
+  opacity: 1;
+}
+
+.sort-item:active {
+  color: var(--basic-dark);
+}
+
 .sort-list-button {
   list-style: none;
-  width: 40px;
   display: flex;
   justify-content: space-between;
-  margin-left: 24px;
 }
 
 .button-down,
@@ -1305,6 +1325,7 @@ img {
 .button-up:active {
   fill: var(--basic-dark);
 }
+
 
 .cards {
   padding-left: 15px;
@@ -1347,6 +1368,21 @@ img {
   opacity: 0.12;
 }
 
+
+.cards-item::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  box-shadow: 23px 0 0 0 var(--basic-white),
+    46px 0 0 0 var(--basic-white);
+}
+
+
 .cards-item:hover::before {
   opacity: 1;
 }
@@ -1354,6 +1390,7 @@ img {
 .cards-item img {
   display: block;
   width: 100%;
+  object-fit: contain;
 }
 
 
@@ -1432,8 +1469,9 @@ img {
   background-color: var(--basic-mildly-red);
 }
 
-.cards-cost:focus: {
+.cards-cost:focus {
   background-color: var(--basic-extra-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border: none;
 }
 
@@ -1443,6 +1481,7 @@ img {
 .pagination-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -1450,7 +1489,7 @@ img {
 .pagination-container {
   display: flex;
   align-items: baseline;
-  margin-bottom: 60px;
+  margin-bottom: 51px;
 }
 
 .pagination-item {
@@ -1474,6 +1513,7 @@ img {
   background-color: var(--basic-gray);
   border-radius: 5px;
   border: 3px solid var(--basic-gray);
+  margin-bottom: 10px;
 }
 
 .pagination-item a:hover {

@@ -40,7 +40,7 @@
     <div class="container filters-wrapper">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
           <fieldset class="filter-item">
             <legend>Стоисмость:</legend>
             <div class="range-filter">
@@ -111,24 +111,24 @@
         <div class="sort">
           <p class="sort-paragraph">Сортировать:</p>
           <ul class="sort-list">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По названию</li>
-            <div class="sort-list-button">
-              <li>
-                <a href="#">
-                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="button-down" d="M5.5 10L0 0H11" fill="#231F20" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="button-up" d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20" />
-                  </svg>
-                </a></li>
-            </div>
+            <li><a class="sort-item" href="#">По цене</a></li>
+            <li><a class="sort-item" href="#">По типу</a></li>
+            <li><a class="sort-item" href="#">По названию</a></li>
+            <li class="sort-list-button">
+            <li>
+              <a href="#">
+                <svg aria-hidden="true" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="button-down" d="M5.5 10L0 0H11" fill="#231F20" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg aria-hidden="true" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="button-up" d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20" />
+                </svg>
+              </a></li>
+            </li>
           </ul>
         </div>
         <ul class="cards-list">
@@ -202,12 +202,12 @@
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Как нас найти</h2>
-    <img class="footer-map" src="img/map.jpg" width="1440" height="416" alt="Изображение адреса на карте">
+    <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615223407312!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen loading="lazy" title="Изображение адреса на карте"></iframe>
     <section class="container">
       <div class="find-us">
         <p class="find-us-subtitle">NЁRDS DESIGN STUDIO</p>
         <p class="address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-phone">тел.+7 (812) 275-75-75</p> <!--  уточнить ссылка или нет -->
+        <p class="contacts-phone">тел. +7 (812) 275-75-75</p> <!--  уточнить ссылка или нет -->
         <a class="write-us" href="blank.html">Напишите нам</a>
       </div>
     </section>
@@ -216,18 +216,17 @@
       <ul class="social-list">
         <li>
           <a class="social-button-vk" href="#">
-            <!-- <img src="img/icon-vk.svg" width="26" height="15" alt="вконтакте"> -->
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li>
           <a class="social-button-fb" href="#">
-            <!-- <img src="img/icon-fb.svg" width="12" height="22" alt="фейсбук"> -->
+            <span class="visually-hidden">Фэйсбук</span>
           </a>
         </li>
         <li>
           <a class="social-button-inst" href="#">
-            <!-- <img src="img/icon-insta.svg" width="21" height="21" alt="инстаграм">
- -->
+            <span class="visually-hidden">Инстаграмм</span>
           </a>
         </li>
       </ul>
