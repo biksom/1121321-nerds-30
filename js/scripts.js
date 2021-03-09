@@ -1,0 +1,104 @@
+const writeUs = document.querySelector(".write-us");
+const writePopup = document.querySelector(".popup");
+const close = document.querySelector(".popup-close");
+const form = writePopup.querySelector("form");
+const name = writePopup.querySelector("[name=name]");
+const mail = writePopup.querySelector("[name=mail]");
+const lead = writePopup.querySelector("[name=lead]");
+
+let isStorageSupport = true;
+let storage = "";
+
+try {
+  storage = localStorage.getItem("name");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+try {
+  storage = localStorage.getItem("mail");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+
+writeUs.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  writePopup.classList.add("modal-show");
+  name.focus();
+  if (storage) {
+    name.value = storage
+  }
+});
+
+close.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  writePopup.classList.remove("modal-show");
+  writePopup.classList.remove("popup-input-error");
+});
+
+form.addEventListener("submit", function(evt) {
+  if (!name.value || !mail.value || !lead.value) {
+    evt.preventDefault();
+    writePopup.classList.add("popup-input-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("name", name.value)
+    }
+  }
+});
+
+form.addEventListener("submit", function(evt) {
+  if (!name.value || !mail.value || !lead.value) {
+    evt.preventDefault();
+    writePopup.classList.add("popup-input-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("mail", mail.value)
+    }
+  }
+});
+
+form.addEventListener("submit", function(evt) {
+  if (!name.value || !mail.value || !lead.value) {
+    evt.preventDefault();
+    writePopup.classList.add("popup-input-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("lead", lead.value)
+    }
+  }
+});
+
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (writePopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      writePopup.classList.remove("modal-show");
+    }
+  }
+});
+
+
+form.addEventListener("submit", function(evt) {
+  if (!name.value || !mail.value || !lead.value) {
+    evt.preventDefault();
+  } else {
+    writePopup.classList.add("popup-input-error popup-input");
+    if (isStorageSupport) {
+      localStorage.setItem("form", form.value)
+    }
+  }
+});
+
+form.addEventListener("submit", function(evt) {
+  if (!name.value || !mail.value || !lead.value) {
+    evt.preventDefault();
+  } else {
+    writePopup.classList.add("popup-input-error popup-input-letter");
+    if (isStorageSupport) {
+      localStorage.setItem("form", form.value)
+    }
+  }
+});
