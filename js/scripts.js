@@ -48,29 +48,6 @@ form.addEventListener("submit", function(evt) {
   }
 });
 
-// form.addEventListener("submit", function(evt) {
-//   if (!name.value || !mail.value || !lead.value) {
-//     evt.preventDefault();
-//     writePopup.classList.add("popup-input-error");
-//   } else {
-//     if (isStorageSupport) {
-//       localStorage.setItem("mail", mail.value)
-//     }
-//   }
-// });
-
-// form.addEventListener("submit", function(evt) {
-//   if (!name.value || !mail.value || !lead.value) {
-//     evt.preventDefault();
-//     writePopup.classList.add("popup-input-error");
-//   } else {
-//     if (isStorageSupport) {
-//       localStorage.setItem("lead", lead.value)
-//     }
-//   }
-// });
-
-
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     if (writePopup.classList.contains("modal-show")) {
@@ -81,27 +58,6 @@ window.addEventListener("keydown", function(evt) {
 });
 
 
-// form.addEventListener("submit", function(evt) {
-//   if (!name.value || !mail.value || !lead.value) {
-//     evt.preventDefault();
-//   } else {
-//     writePopup.classList.add("popup-input-error popup-input");
-//     if (isStorageSupport) {
-//       localStorage.setItem("form", form.value)
-//     }
-//   }
-// });
-
-// form.addEventListener("submit", function(evt) {
-//   if (!name.value || !mail.value || !lead.value) {
-//     evt.preventDefault();
-//   } else {
-//     writePopup.classList.add("popup-input-error popup-input-letter");
-//     if (isStorageSupport) {
-//       localStorage.setItem("form", form.value)
-//     }
-//   }
-// });
 
 // Slider
 
@@ -113,7 +69,7 @@ if (slider) {
 
   function toggleSlide() {
 
-    const activeSlideIndex = +this.dataset.index.value;
+    const activeSlideIndex = +this.dataset.index;
 
 
     sliderControls.forEach(function(control) {

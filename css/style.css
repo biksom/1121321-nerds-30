@@ -265,6 +265,7 @@ img {
   display: inline-block;
   padding: 17px 54px 15px 54px;
   border-radius: 3px;
+  vertical-align: top;
 }
 
 .description-study:hover {
@@ -287,6 +288,7 @@ img {
   background-repeat: no-repeat;
   background-position-x: 397px;
   background-position-y: -11px;
+  min-height: 421px;
 }
 
 .description-item-one {
@@ -404,6 +406,7 @@ img {
 .services-order-web {
   display: inline-block;
   background-color: var(--basic-red);
+  vertical-align: top;
 }
 
 .services-order-web:hover {
@@ -417,6 +420,7 @@ img {
 .services-order-app {
   display: inline-block;
   background-color: var(--basic-green);
+  vertical-align: top;
 }
 
 .services-order-app:hover {
@@ -430,6 +434,7 @@ img {
 .services-order-presentation {
   display: inline-block;
   background-color: var(--basic-yellow);
+  vertical-align: top;
 }
 
 .services-order-presentation:hover {
@@ -499,7 +504,7 @@ img {
   margin-bottom: -6px;
 }
 
-.about-us-item:nth-last-child {
+.about-us-item:last-child {
   margin-bottom: 0;
 }
 
@@ -1253,6 +1258,11 @@ img {
   opacity: 1;
 }
 
+.filter-input:focus+label::before,
+.filter-input:focus+label::after {
+  opacity: 1;
+}
+
 .filter legend {
   font-size: 18px;
   line-height: 30px;
@@ -1497,6 +1507,11 @@ img {
   display: block;
 }
 
+.cards-item:focus,
+.shopping-menu:focus {
+  display: block;
+}
+
 .shopping-menu h3 {
   padding: 0;
   margin: 0;
@@ -1581,13 +1596,13 @@ img {
 }
 
 .pagination-item-current {
-  border-color: #DBDBDB;
+  border-color: var(--basic-usual-gray);
 }
 
 .pagination-item-current a {
   width: 44px;
   height: 44px;
-  background-color: #fff;
+  background-color: var(--basic-white);
 }
 
 .pagination-item a:hover {
@@ -1604,7 +1619,7 @@ img {
 .pagination-item-current a:hover,
 .pagination-item-current a:active {
   box-shadow: none;
-  background-color: #fff;
+  background-color: var(--basic-white);
   border-radius: 0;
 }
 

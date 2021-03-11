@@ -1,44 +1,44 @@
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px) translateX(-50%);
-    transform: translateY(-2000px) translateX(-50%)
+    -webkit-transform: translateY(-95%) translateX(-50%);
+    transform: translateY(-95%) translateX(-50%)
   }
 
   70% {
-    -webkit-transform: translateY(30px) translateX(-50%);
-    transform: translateY(30px) translateX(-50%)
+    -webkit-transform: translateY(15%) translateX(-50%);
+    transform: translateY(15%) translateX(-50%)
   }
 
   90% {
-    -webkit-transform: translateY(-10px) translateX(-50%);
-    transform: translateY(-10px) translateX(-50%)
+    -webkit-transform: translateY(-45%) translateX(-50%);
+    transform: translateY(-45%) translateX(-50%)
   }
 
   to {
-    -webkit-transform: translateY(0) translateX(-50%);
-    transform: translateY(0) translateX(-50%)
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
   }
 }
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px) translateX(-50%);
-    transform: translateY(-2000px) translateX(-50%)
+    -webkit-transform: translateY(-95%) translateX(-50%);
+    transform: translateY(-95%) translateX(-50%)
   }
 
   70% {
-    -webkit-transform: translateY(30px) translateX(-50%);
-    transform: translateY(30px) translateX(-50%)
+    -webkit-transform: translateY(15%) translateX(-50%);
+    transform: translateY(15%) translateX(-50%)
   }
 
   90% {
-    -webkit-transform: translateY(-10px) translateX(-50%);
-    transform: translateY(-10px) translateX(-50%)
+    -webkit-transform: translateY(-45%) translateX(-50%);
+    transform: translateY(-45%) translateX(-50%)
   }
 
   to {
-    -webkit-transform: translateY(0) translateX(-50%);
-    transform: translateY(0) translateX(-50%)
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
   }
 }
 
@@ -46,8 +46,8 @@
 
   0%,
   to {
-    -webkit-transform: translateX(0) translateX(-50%);
-    transform: translateX(0) translateX(-50%)
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
   }
 
   10%,
@@ -55,16 +55,16 @@
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px) translateX(-50%);
-    transform: translateX(-10px) translateX(-50%)
+    -webkit-transform: translateY(calc(-50% - 10px)) translateX(-50%);
+    transform: translateY(calc(-50% - 10px)) translateX(-50%)
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px) translateX(-50%);
-    transform: translateX(10px) translateX(-50%)
+    -webkit-transform: translateY(calc(-50% + 10px)) translateX(-50%);
+    transform: translateY(calc(-50% + 10px)) translateX(-50%)
   }
 }
 
@@ -72,8 +72,8 @@
 
   0%,
   to {
-    -webkit-transform: translateX(0) translateX(-50%);
-    transform: translateX(0) translateX(-50%)
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
   }
 
   10%,
@@ -81,16 +81,16 @@
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px) translateX(-50%);
-    transform: translateX(-10px) translateX(-50%)
+    -webkit-transform: translateY(calc(-50% - 10px)) translateX(-50%);
+    transform: translateY(calc(-50% - 10px)) translateX(-50%)
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px) translateX(-50%);
-    transform: translateX(10px) translateX(-50%)
+    -webkit-transform: translateY(calc(-50% + 10px)) translateX(-50%);
+    transform: translateY(calc(-50% + 10px)) translateX(-50%)
   }
 }
 
@@ -354,7 +354,8 @@ img {
   text-transform: uppercase;
   display: inline-block;
   padding: 17px 54px 15px;
-  border-radius: 3px
+  border-radius: 3px;
+  vertical-align: top
 }
 
 .description-study:hover {
@@ -376,7 +377,8 @@ img {
   padding-bottom: 80px;
   background-repeat: no-repeat;
   background-position-x: 397px;
-  background-position-y: -11px
+  background-position-y: -11px;
+  min-height: 421px
 }
 
 .description-item-one {
@@ -422,8 +424,7 @@ img {
   background-color: var(--basic-white);
   border: 0;
   border-radius: 50%;
-  cursor: pointer;
-  outline: 0
+  cursor: pointer
 }
 
 .slider-controls .current {
@@ -492,10 +493,10 @@ img {
   text-transform: uppercase
 }
 
-.services-order-app,
 .services-order-web {
   display: inline-block;
-  background-color: var(--basic-red)
+  background-color: var(--basic-red);
+  vertical-align: top
 }
 
 .services-order-web:hover {
@@ -506,8 +507,11 @@ img {
   background-color: var(--basic-extra-red)
 }
 
-.services-order-app {
-  background-color: var(--basic-green)
+.services-order-app,
+.services-order-presentation {
+  display: inline-block;
+  background-color: var(--basic-green);
+  vertical-align: top
 }
 
 .services-order-app:hover {
@@ -519,7 +523,6 @@ img {
 }
 
 .services-order-presentation {
-  display: inline-block;
   background-color: var(--basic-yellow)
 }
 
@@ -588,7 +591,7 @@ img {
   margin-bottom: -6px
 }
 
-.about-us-item:nth-last-child {
+.about-us-item:last-child {
   margin-bottom: 0
 }
 
@@ -1252,6 +1255,11 @@ img {
   opacity: 1
 }
 
+.filter-input:focus+label::after,
+.filter-input:focus+label::before {
+  opacity: 1
+}
+
 .filter legend {
   font-size: 18px;
   line-height: 30px
@@ -1492,6 +1500,11 @@ img {
   right: 0
 }
 
+.cards-item:focus,
+.shopping-menu:focus {
+  display: block
+}
+
 .shopping-menu h3 {
   padding: 0;
   margin: 0 0 12px
@@ -1584,13 +1597,13 @@ img {
 }
 
 .pagination-item-current {
-  border-color: #dbdbdb
+  border-color: var(--basic-usual-gray)
 }
 
 .pagination-item-current a {
   width: 44px;
   height: 44px;
-  background-color: #fff
+  background-color: var(--basic-white)
 }
 
 .pagination-item a:active {
@@ -1604,7 +1617,7 @@ img {
 .pagination-item-current a:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #fff;
+  background-color: var(--basic-white);
   border-radius: 0
 }
 
@@ -1639,5 +1652,3 @@ img {
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1)
 }
-
-Show transformations log
