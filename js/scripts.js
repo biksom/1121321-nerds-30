@@ -102,3 +102,33 @@ form.addEventListener("submit", function(evt) {
     }
   }
 });
+
+// Slider
+
+const slider = document.querySelector(".description-list");
+if (slider) {
+  const slides = document.querySelectorAll(".description-item");
+  const sliderControls = document.querySelectorAll(".slider-controls button");
+
+  function toggleSlide() {
+
+    const activeSlideIndex = +this.attributes.dataIndex.value;
+
+
+    sliderControls.forEach(function(control) {
+      control.classList.remove("current");
+    });
+
+    this.classList.add("current");
+
+    slides.forEach(function(slide) {
+      slide.classList.remove("current");
+    });
+
+    slides[activeSlideIndex].classList.add("current");
+  }
+
+  sliderControls.forEach(function(control) {
+    control.addEventListener("click", toggleSlide);
+  });
+}
