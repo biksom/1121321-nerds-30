@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -61,9 +61,9 @@
           </li>
         </ul>
         <ul class="slider-controls">
-          <li><button class="current" type="button" dataIndex="0" value="slide-1" aria-label="Первый слайд"></button></li>
-          <li><button type="button" value="slide-2" dataIndex="1" aria-label="Второй слайд"></button></li>
-          <li><button type="button" value="slide-3" dataIndex="2" aria-label="Третий слайд"></button></li>
+          <li><button class="current" type="button" data-index="0" value="slide-1" aria-label="Первый слайд"></button></li>
+          <li><button type="button" value="slide-2" data-index="1" aria-label="Второй слайд"></button></li>
+          <li><button type="button" value="slide-3" data-index="2" aria-label="Третий слайд"></button></li>
         </ul>
       </section>
     </div>
@@ -179,20 +179,20 @@
       <div class="popup-data">
         <div class="form-field-wrapper">
           <label class="popup-name" id="name" for="name">Ваше имя:</label>
-          <input class="popup-input popup-input-error" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          <input class="popup-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
         </div>
         <div class="form-field-wrapper">
           <label class="popup-mail" id="mail" for="mail">Ваш email:</label>
-          <input class="popup-input popup-input-error" type="text" id="mail" name="mail" placeholder="email@example.com">
+          <input class="popup-input" type="text" id="mail" name="mail" placeholder="email@example.com">
         </div>
       </div>
       <label class="popup-lead" id="lead" for="lead">Текст письма:</label>
-      <textarea class="popup-input-letter popup-input-error" type="text" id="lead" name="lead" placeholder="В свободной форме"></textarea>
+      <textarea class="popup-input-letter" type="text" id="lead" name="lead" placeholder="В свободной форме"></textarea>
       <button class="popup-button" type="submit">Отправить</button>
       <button class="popup-close" type="button" aria-label="Закрыть"></button>
     </form>
   </section>
-  <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

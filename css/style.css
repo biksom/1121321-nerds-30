@@ -326,7 +326,6 @@ img {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  outline: none;
 }
 
 .slider-controls .current {
@@ -1006,20 +1005,20 @@ img {
 @keyframes bounce {
 
   0% {
-    transform: translateY(-2000px) translateX(-50%);
+    transform: translateY(-95%) translateX(-50%);
   }
 
   70% {
-    transform: translateY(30px) translateX(-50%);
+    transform: translateY(15%) translateX(-50%);
   }
 
   90% {
-    transform: translateY(-10px) translateX(-50%);
+    transform: translateY(-45%) translateX(-50%);
   }
 
 
   100% {
-    transform: translateY(0) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
   }
 
 }
@@ -1028,7 +1027,7 @@ img {
 
   0%,
   100% {
-    transform: translateX(0) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
   }
 
   10%,
@@ -1036,14 +1035,14 @@ img {
   50%,
   70%,
   90% {
-    transform: translateX(-10px) translateX(-50%);
+    transform: translateY(calc(-50% - 10px)) translateX(-50%)
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px) translateX(-50%);
+    transform: translateY(calc(-50% + 10px)) translateX(-50%)
   }
 }
 
