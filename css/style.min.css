@@ -1493,8 +1493,9 @@ img {
   background-color: var(--basic-gray);
   text-align: center;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   padding-top: 26px;
+  padding-bottom: 44px;
   bottom: 0;
   left: 0;
   right: 0
@@ -1548,6 +1549,8 @@ img {
 
 .pagination-list {
   list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
