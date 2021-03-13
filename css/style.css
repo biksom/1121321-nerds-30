@@ -101,6 +101,12 @@ img {
 
 /*Main navigation*/
 
+
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -710,8 +716,12 @@ img {
   margin-bottom: 54px;
 }
 
+.contacts-phone a {
+  color: inherit;
+}
 
 .write-us {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1637,7 +1647,6 @@ img {
   background-color: var(--basic-white);
   border-radius: 0;
 }
-
 
 .pagination-item-next {
   display: block;

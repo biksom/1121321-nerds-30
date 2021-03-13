@@ -185,6 +185,10 @@ img {
   background-color: var(--basic-gray)
 }
 
+.main-header-logo:active {
+  opacity: .3
+}
+
 .site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,7 +777,12 @@ img {
   margin-bottom: 54px
 }
 
+.contacts-phone a {
+  color: inherit
+}
+
 .write-us {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
