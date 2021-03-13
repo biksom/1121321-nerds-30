@@ -7,6 +7,7 @@
   --basic-dark: #231f20;
   --basic-light-dark: #666666;
   --basic-dark-opacity: #b3b3b3;
+  --basic-rgba-dark: rgba(0, 0, 0, 0.4);
 
   --basic-super-gray: #888888;
   --basic-extra-gray: #444444;
@@ -19,6 +20,10 @@
   --basic-special-gray: #b4b9bb;
   --special-ultra-gray: #d7dcde;
   --special-gray: #d5d5d5;
+  --basic-rgba-gray: rgba(0, 1, 1, 0.25);
+  --basic-rgba-light-gray: rgba(0, 1, 1, 0.1);
+  --basic-rgba-usual-gray: rgba(0, 0, 0, 0.15);
+
 
   --basic-extra-red: #d7373b;
   --basic-mildly-red: #e74246;
@@ -816,7 +821,7 @@ img {
 
 .social-button-vk:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-rgba-light-gray);
 }
 
 .social-button-vk:active::before {
@@ -826,7 +831,7 @@ img {
 
 .social-button-fb:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-rgba-light-gray);
 }
 
 .social-button-fb:active::before {
@@ -836,7 +841,7 @@ img {
 
 .social-button-inst:active {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-rgba-light-gray);
 }
 
 .social-button-inst:active::before {
@@ -855,7 +860,7 @@ img {
   top: 50%;
   padding: 63px 90px 84px 100px;
   background-color: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--basic-rgba-dark);
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
@@ -1126,7 +1131,7 @@ img {
   border: 8px solid var(--basic-white);
   background-color: var(--basic-mildly-gray);
   border-radius: 50%;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 1px var(--basic-rgba-usual-gray);
   cursor: pointer;
   box-sizing: content-box;
   transform: translateY(-50%);
@@ -1428,7 +1433,7 @@ img {
 }
 
 .cards-item:hover {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px var(--basic-rgba-gray);
 }
 
 .cards-item::before {
@@ -1504,7 +1509,11 @@ img {
   right: 0;
 }
 
-.cards-item:hover .shopping-menu {
+.cards-item:hover-within .shopping-menu {
+  display: block;
+}
+
+.cards-item:focus-within .shopping-menu {
   display: block;
 }
 
@@ -1551,7 +1560,7 @@ img {
 
 .cards-cost:focus {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-rgba-light-gray);
   border: none;
 }
 
@@ -1614,7 +1623,7 @@ img {
 
 .pagination-item a:active {
   background-color: var(--special-gray);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-rgba-light-gray);
   border-radius: 3px;
 }
 
@@ -1653,5 +1662,5 @@ img {
 
 .pagination-item-next:active {
   background-color: var(--special-gray);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-rgba-light-gray);
 }

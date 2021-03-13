@@ -100,6 +100,7 @@
   --basic-dark: #231f20;
   --basic-light-dark: #666666;
   --basic-dark-opacity: #b3b3b3;
+  --basic-rgba-dark: rgba(0, 0, 0, 0.4);
   --basic-super-gray: #888888;
   --basic-extra-gray: #444444;
   --basic-dark-gray: #4d4d4d;
@@ -111,6 +112,9 @@
   --basic-special-gray: #b4b9bb;
   --special-ultra-gray: #d7dcde;
   --special-gray: #d5d5d5;
+  --basic-rgba-gray: rgba(0, 1, 1, 0.25);
+  --basic-rgba-light-gray: rgba(0, 1, 1, 0.1);
+  --basic-rgba-usual-gray: rgba(0, 0, 0, 0.15);
   --basic-extra-red: #d7373b;
   --basic-mildly-red: #e74246;
   --basic-red: #fb565a;
@@ -688,7 +692,6 @@ img {
   opacity: .2
 }
 
-.cards-item:hover .shopping-menu,
 .partners-list img {
   display: block
 }
@@ -877,8 +880,8 @@ img {
 .social-button-inst:active,
 .social-button-vk:active {
   background-color: var(--basic-extra-red);
-  -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1)
+  -webkit-box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray);
+  box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray)
 }
 
 .social-button-fb:active::before,
@@ -896,8 +899,8 @@ img {
   top: 50%;
   padding: 63px 90px 84px 100px;
   background-color: var(--basic-white);
-  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0 20px 40px var(--basic-rgba-dark);
+  box-shadow: 0 20px 40px var(--basic-rgba-dark);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1120,8 +1123,8 @@ img {
   border: 8px solid var(--basic-white);
   background-color: var(--basic-mildly-gray);
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .15);
-  box-shadow: 0 2px 1px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 2px 1px var(--basic-rgba-usual-gray);
+  box-shadow: 0 2px 1px var(--basic-rgba-usual-gray);
   cursor: pointer;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -1432,8 +1435,8 @@ img {
 }
 
 .cards-item:hover {
-  -webkit-box-shadow: 0 6px 15px rgba(0, 1, 1, .25);
-  box-shadow: 0 6px 15px rgba(0, 1, 1, .25)
+  -webkit-box-shadow: 0 6px 15px var(--basic-rgba-gray);
+  box-shadow: 0 6px 15px var(--basic-rgba-gray)
 }
 
 .cards-item::before {
@@ -1501,6 +1504,14 @@ img {
   right: 0
 }
 
+.cards-item:hover-within .shopping-menu {
+  display: block
+}
+
+.cards-item:focus-within .shopping-menu {
+  display: block
+}
+
 .cards-item:focus,
 .shopping-menu:focus {
   display: block
@@ -1542,8 +1553,8 @@ img {
 
 .cards-cost:focus {
   background-color: var(--basic-extra-red);
-  -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
+  -webkit-box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray);
+  box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray);
   border: 0
 }
 
@@ -1611,8 +1622,8 @@ img {
 
 .pagination-item a:active {
   background-color: var(--special-gray);
-  -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
+  -webkit-box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray);
+  box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray);
   border-radius: 3px
 }
 
@@ -1652,6 +1663,6 @@ img {
 
 .pagination-item-next:active {
   background-color: var(--special-gray);
-  -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1)
+  -webkit-box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray);
+  box-shadow: inset 0 3px 0 var(--basic-rgba-light-gray)
 }
