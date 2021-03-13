@@ -1517,6 +1517,11 @@ img {
   display: block
 }
 
+.cards-cost,
+.cards-item:hover .shopping-menu {
+  display: block
+}
+
 .shopping-menu h3 {
   padding: 0;
   margin: 0 0 12px
@@ -1532,7 +1537,6 @@ img {
 }
 
 .cards-cost {
-  display: block;
   width: 200px;
   margin: 0 auto;
   font-weight: 500;

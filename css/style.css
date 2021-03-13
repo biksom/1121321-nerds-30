@@ -1522,6 +1522,10 @@ img {
   display: block;
 }
 
+.cards-item:hover .shopping-menu {
+  display: block;
+}
+
 .shopping-menu h3 {
   padding: 0;
   margin: 0;
