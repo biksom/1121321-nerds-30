@@ -103,7 +103,7 @@ img {
 
 
 
-.main-header-logo:active {
+.main-header-logo[href]:active {
   opacity: 0.3;
 }
 
