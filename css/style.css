@@ -1496,13 +1496,15 @@ img {
 }
 
 .shopping-menu-description {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-dark);
-  padding: 0;
-  margin: 0;
+  width: 255px;
+  text-align: center;
   padding-bottom: 34px;
-
 }
 
 .shopping-menu {
@@ -1512,7 +1514,7 @@ img {
   text-align: center;
   width: 360px;
   min-height: 231px;
-  padding-top: 26px;
+  padding-top: 5px;
   padding-bottom: 44px;
   bottom: 0;
   left: 0;
